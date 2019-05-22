@@ -12,9 +12,7 @@ export class AppleIap {
      * @param isTest test env?
      */
     public constructor(isTest: boolean) {
-        this.serverUrl = isTest
-            ? "https://buy.itunes.apple.com/verifyReceipt"
-            : "https://sandbox.itunes.apple.com/verifyReceipt";
+        this.serverUrl = isTest ? "https://sandbox.itunes.apple.com" : "https://buy.itunes.apple.com";
     }
 
     /**
@@ -22,7 +20,7 @@ export class AppleIap {
      * @param receipt apple receipt
      * @param options options
      */
-    public async validateReceipt(receipt: string, options: ValidateReceiptOptions): Promise<any> {
+    public async validateReceipt(receipt: string, options: ValidateReceiptOptions = {}): Promise<any> {
         // request data
         const requestPath = "/verifyReceipt";
         const requestMethod = "POST";
