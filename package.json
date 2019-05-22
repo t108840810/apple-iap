@@ -6,7 +6,8 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "tsc",
-        "style:prettier": "prettier --write \"src/**/*\""
+        "style:prettier": "prettier --write \"src/**/*\"",
+        "republish": "tsc"
     },
     "repository": {
         "type": "git",
