@@ -1,0 +1,32 @@
+{
+    "name": "apple-iap",
+    "version": "0.0.0",
+    "description": "apple in-app purchase",
+    "main": "dist/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "tsc",
+        "style:prettier": "prettier --write \"src/**/*\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/t108840810/apple-iap.git"
+    },
+    "keywords": [
+        "apple-iap",
+        "iap",
+        "apple"
+    ],
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/t108840810/apple-iap/issues"
+    },
+    "homepage": "https://github.com/t108840810/apple-iap#readme",
+    "devDependencies": {
+        "@types/node": "^12.0.2",
+        "prettier": "^1.17.1",
+        "ts-node": "^8.1.0",
+        "typescript": "^3.4.5"
+    }
+}
